@@ -2,8 +2,6 @@ var number = [9, 2, 4, 3];
 
 function largestTimeFromDigits(number) {
     var fall = "Такой массив на время не разделить"
-    var fall1 = "Такой массив на время не разделить1"
-    var fall2 = "Такой массив на время не разделить2"
     var num = 2;
     var num1 = 4;
     var num11 = 9;
@@ -54,7 +52,7 @@ function largestTimeFromDigits(number) {
             num11--
         }
         if ((num1 == -1) || (num11 == -1)) {
-            return fall1
+            return fall
         }
     }
     var index = number.indexOf(digit1);
@@ -72,7 +70,7 @@ function largestTimeFromDigits(number) {
         }
         --num2
         if (num2 == -1) {
-            return fall2
+            return fall
         }
     }
     var index = number.indexOf(digit2);
