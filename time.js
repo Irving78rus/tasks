@@ -3,14 +3,13 @@ var number = [9, 2, 4, 3];
 function largestTimeFromDigits(number) {
     var fall = "Такой массив на время не разделить"
     var num = 2;
-    var num1 = 4;
+    var num1 = 3;
     var num11 = 9;
     var num2 = 5;
     var digit = -1;
     var digit1 = -1;
     var digit2 = -1;
     var final = [];
-    console.log(number)
     while (digit == -1) {
 
         for (var i = 0; i < number.length; i++) {
@@ -35,13 +34,11 @@ function largestTimeFromDigits(number) {
             if ((number[i] == num1) && (digit == 2)) {
                 digit1 = number[i]
                 final.push(digit1)
-                console.log(final + ' final');
                 break;
             }
             else if ((number[i] == num11) && (digit == 1)) {
                 digit1 = number[i]
                 final.push(digit1)
-                console.log(final + ' final');
                 break;
             }
         }
@@ -80,5 +77,4 @@ function largestTimeFromDigits(number) {
     var str = final.join('');
     return str
 }
-var result = largestTimeFromDigits(number)
-console.log(result);
+ console.log(largestTimeFromDigits(number))
