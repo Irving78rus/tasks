@@ -30,8 +30,7 @@ function largestTimeFromDigits(number ) {
             
         }
     }
-    console.log(soso)
-console.log(digit)
+   
     while (digit == -1) {
 
         for (var i = 0; i < number.length; i++) {
